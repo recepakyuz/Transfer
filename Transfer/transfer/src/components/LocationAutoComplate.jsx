@@ -1,4 +1,4 @@
-﻿import { Autocomplete } from '@mui/material';
+﻿import { Autocomplete,Paper } from '@mui/material';
 import TextField from '@mui/material/TextField';
 
 const options = [
@@ -19,9 +19,8 @@ const LocationAutoComplate = ({ label, onChange }) => {
         <Autocomplete
             options={options}
             getOptionLabel={(option) => option.title} // Görüntülenecek etiket
-            renderInput={(params) => <TextField {...params} label={label} />}
+            renderInput={(params) => <TextField {...params} label={label} variant="outlined" />}
             onChange={onChange}
-        
         />
     );
 };

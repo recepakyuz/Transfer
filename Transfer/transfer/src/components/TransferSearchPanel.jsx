@@ -25,7 +25,7 @@ const TransferSearchPanel = () => {
 
     return (
         
-        <Grid container  justifyContent="center" alignItems="center" style={{padding:"20px", opacity:1 }}>
+        <Grid container  justifyContent="center" alignItems="center" style={{padding:"20px" }}>
             <Grid container spacing={2} style={{ maxWidth: '500px' }}>
             <Grid item xs={6}>
                 <LocationAutoComplate label="Nereden" onchange={handleFromLocation}></LocationAutoComplate>

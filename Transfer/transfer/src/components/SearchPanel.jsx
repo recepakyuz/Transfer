@@ -27,8 +27,8 @@ const SearchPanel = () => {
     };
 
     return (
-        <div style={{ border: '1px solid lightgray', background:'#fff' }} >
-            <AppBar position="static" sx={{ background: '#fff' }}>
+        <div style={{ border: '1px solid lightgray', backgroundColor:'rgba(255,255,255,0.8)' }} >
+            <AppBar position="static" sx={{ background: '#fff'}}>
                 <Tabs value={value} onChange={handleChange}>
                     <Tab label="Transfer Arama" />
                     <Tab label="Shuttle Arama" />

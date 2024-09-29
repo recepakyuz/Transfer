@@ -6,7 +6,7 @@ import { AppBar, Toolbar, Typography, Button, Container } from '@mui/material';
 
 const Header = () => {
     return (
-        <AppBar position="static" style={{opacity:"0.9"}} >
+        <AppBar position="static">
                 <Toolbar style={{ display: 'flex', justifyContent: 'space-between' }}>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} style={{ textAlign:'left'}}>
                         <Link to="/" style={{ textDecoration: 'none', color: 'white'  }}>TCompany
