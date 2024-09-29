@@ -19,12 +19,12 @@ const PassengerCounter = ({ label, counter, onChange }) => {
     return (
         <Box textAlign="center" mt={5}>
             <Typography variant="h6" mt={2}>{label} {count}</Typography>
-            <Box mt={2}>
-                <Button variant="contained" color="primary" onClick={increment}>
-                    +
-                </Button>
-                <Button variant="contained" color="secondary" onClick={decrement} style={{ marginLeft: '10px' }}>
+            <Box mt={2}>               
+                <Button variant="contained" color="secondary" onClick={decrement} >
                     -
+                </Button>
+                <Button variant="contained" color="primary" onClick={increment} style={{ marginLeft: '10px' }}>
+                    +
                 </Button>
             </Box>
         </Box>

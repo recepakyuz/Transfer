@@ -9,12 +9,17 @@ const CustomDatePicker = () => {
     return (
         <LocalizationProvider dateAdapter={AdapterDateFns}>
             <DatePicker
-                label="Varış Tarihi"
+                label="Tarih Seçin"
                 value={selectedDate}
-                onChange={(newValue) => {
-                    setSelectedDate(newValue);
-                }}
-                renderInput={(params) => <TextField {...params} />}
+                onChange={(newValue) => setSelectedDate(newValue)}
+                renderInput={(params) => (
+                    <TextField
+                        {...params}
+                        fullWidth 
+                        variant="outlined"
+                        style={{ width: '400px' }}
+                    />
+                )}
             />
         </LocalizationProvider>
     );
